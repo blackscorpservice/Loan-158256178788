@@ -1,0 +1,457 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*------------------------------------------------------------------
+
+Template Name:      Borrow Demo Preview Page
+Version:            1.0.0
+Created Date:       14/11/2017 
+ 
+
+------------------------------------------------------------------
+[CSS Table of contents]
+
+1.  Body / Typography 
+2.  Form Elements
+3.  Buttons
+4.  General / Elements
+       4.1 Section space
+       4.2 Margin space
+       4.3 Padding space
+       4.4 Background color
+       4.5 Features
+       4.7 Call to actions
+       4.8 Img hover effect
+       4.9 Icon
+       -----------------------
+5. Header / Navigations
+       5.1 Header Regular
+       5.2 Header Transparent
+       5.3 Navigation Regular
+       5.4 Page Header
+
+       -----------------------
+6. Slider
+       6.1 Slider
+       -----------------------
+7. Content
+8. Footers
+9. Services
+
+   9.1  Service 
+   9.2  Service Single
+   ------------------------------------
+
+10.Pages
+
+   10.1  About
+   10.2  Company List
+   10.3  Job List
+   10.4  Job Single
+   10.5  Client Reviews
+   10.6  Contact us
+   10.7  Consultation Form
+   10.8  Styleguide
+   10.9  404 error
+
+   ------------------------------------
+11.Blog
+   10.1 Blog Default
+   10.2 Blog Single
+   ------------------------------------
+   
+12.Sidebar
+   11.1 Widget
+   ------------------------------------
+
+13. Media Queries
+
+------------------------------------------------------------------*/
+
+/*----------------------------------
+    1. Body / Typography
+----------------------------------*/
+
+body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; background-color: #05264a; font-family: 'Roboto', sans-serif; letter-spacing: 0px; font-size: 18px; color: #7aafea; font-weight: 400; line-height: 28px; }
+h1, h2, h3, h4, h5, h6 { color: #c8dbf0; margin: 0px 0px 15px 0px; font-weight: 400; font-family: 'Roboto', sans-serif; }
+h1 { font-size: 36px; line-height: 42px; font-weight: 300; }
+h2 { font-size: 24px; line-height: 32px; font-weight: 300; }
+h3 { font-size: 21px; line-height: 30px; font-weight: 400; }
+h4 { font-size: 18px; line-height: 26px; font-weight: 400; }
+h5 { font-size: 13px; font-weight: 400; }
+h6 { font-size: 12px; font-weight: 400; }
+p { margin: 0 0 20px; line-height: 1.8; }
+p:last-child { margin: 0px; }
+ul, ol { list-style: none; margin: 0; padding: 0; }
+a { text-decoration: none; color: #c8dbf0; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+a:focus, a:hover { text-decoration: none; color: #f74ba1; }
+sub { bottom: 0em; }
+.lead { font-size: 19px; font-weight: 300; line-height: 1.6; font-family: 'Roboto', sans-serif; color: #7aafea; margin-bottom: 30px; }
+blockquote { padding: 0px 24px; margin: 0 0 30px; font-size: 21px; border-left: 5px solid #016e9f; }
+.qoute-icon { }
+.blockquote-content { }
+.blockquote-text { font-family: 'Roboto', sans-serif; color: #161718; font-weight: 400; font-size: 24px; line-height: 1.4; font-style: italic; }
+.blockquote-author { font-weight: 400; font-size: 14px; text-transform: capitalize; color: #0084bf; }
+strong { color: #1c1e1e; }
+hr { border-top: 1px solid #e4eaed; margin-bottom: 40px; margin-top: 40px; }
+
+/*-----------------------
+    2 Form Elements:
+-------------------------*/
+ 
+
+ 
+
+/*-----------------------------------
+    3. Buttons 
+-----------------------------------*/
+.btn { font-family: 'Roboto', sans-serif; font-size: 16px; text-transform: capitalize; font-weight: 400; padding: 10px 20px; border-radius: 0px; line-height: 1.8; letter-spacing: 0px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; word-wrap: break-word; white-space: normal !important; border-radius: 4px; }
+.btn-primary { background-color: #55a903; color: #fff; border: 2px solid #55a903; }
+.btn-primary:hover { background-color: #448604; color: #fff; border: 2px solid #448604; }
+.btn-primary.focus, .btn-primary:focus { background-color: #0170a2; color: #fff; border: 2px solid #0170a2; }
+.btn-default { background-color: #f3218c; color: #fff; border: 2px solid #f3218c; }
+.btn-default:hover { background-color: #d51175; color: #fff; border: 2px solid #d51175; }
+.btn-default.focus, .btn-default:focus { background-color: #070809; color: #fff; border: 2px solid #070809; }
+.btn-outline { background-color: transparent; border: 2px solid #f74ba1; color: #f74ba1; }
+.btn.btn-outline { }
+.btn-outline:hover { background-color: #e23f90; border: 2px solid #e23f90; color: #fff; -webkit-transition: border-color 0.3s, background-color 0.3s; transition: border-color 0.3s, background-color 0.3s; }
+.btn-outline.focus, .btn-outline:focus { background-color: #e23f90; border: 2px solid #e23f90; color: #fff; -webkit-transition: border-color 0.3s, background-color 0.3s; transition: border-color 0.3s, background-color 0.3s; }
+.btn-lg { padding: 15px 38px; font-size: 20px; font-weight: 600; }
+.btn-sm { padding: 11px 22px; font-size: 12px; }
+.btn-xs { padding: 10px 14px; font-size: 10px; }
+.btn-white { color: #161718; background: #fff; }
+.btn-white:hover { background-color: #fff; color: #161718; }
+.btn-white.focus, .btn-white:focus { background-color: #fff; color: #161718; }
+.btn-white-outline { color: #fff; background: transparent; border: 2px solid #fff; }
+.btn-white-outline:hover { background-color: #fff; color: #161718; }
+.btn-white-outline.focus, .btn-white-outline:focus { background-color: #fff; color: #161718; }
+.btn-link { color: #0084bf; font-size: 14px; font-weight: 600; text-transform: capitalize; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; position: relative; }
+.btn-link:hover { color: #161718; text-decoration: none; }
+button.btn { margin-right: -1px; }
+
+/*-----------------------------------
+    4. General / Elements 
+-----------------------------------*/
+
+/*----------------------- 
+    4.1 Section space :
+-------------------------*/
+
+/*Note: Section space help to create top bottom space;*/
+
+.space-small { padding-top: 40px; padding-bottom: 40px; }
+.space-medium { padding-top: 80px; padding-bottom: 80px; }
+.space-large { padding-top: 120px; padding-bottom: 120px; }
+.space-ex-large { padding-top: 140px; padding-bottom: 140px; }
+.content { padding-top: 80px; padding-bottom: 80px; }
+
+/*----------------------
+   4.2 Margin Space
+-----------------------*/
+.ml30 { margin-left: 30px; }
+.mb0 { margin-bottom: 0px; }
+.mb10 { margin-bottom: 10px; }
+.mb20 { margin-bottom: 20px; }
+.mb30 { margin-bottom: 30px; }
+.mb35 { margin-bottom: 35px; }
+.mb40 { margin-bottom: 40px; }
+.mb60 { margin-bottom: 60px; }
+.mb80 { margin-bottom: 80px; }
+.mb100 { margin-bottom: 100px; }
+.mb130 { margin-bottom: 130px; }
+.mt0 { margin-top: 0px; }
+.mt10 { margin-top: 10px; }
+.mt20 { margin-top: 20px; }
+.mt30 { margin-top: 30px; }
+.mt40 { margin-top: 40px; }
+.mt60 { margin-top: 60px; }
+.mt70 { margin-top: 70px; }
+.mt80 { margin-top: 80px; }
+.mt100 { margin-top: 100px; }
+
+/*----- less margin space from top --*/
+.mt-20 { margin-top: -20px; }
+.mt-40 { margin-top: -40px; }
+.mt-60 { margin-top: -60px; }
+.mt-80 { margin-top: -80px; }
+
+/*-----------------------
+   4.3 Padding space
+-------------------------*/
+.nopadding { padding: 0px; }
+.nopr { padding-right: 0px; }
+.nopl { padding-left: 0px; }
+.pinside10 { padding: 10px; }
+.pinside20 { padding: 20px; }
+.pinside30 { padding: 30px; }
+.pinside40 { padding: 40px; }
+.pinside50 { padding: 50px; }
+.pinside60 { padding: 60px; }
+.pinside80 { padding: 80px; }
+.pinside130 { padding: 130px; }
+.pdt10 { padding-top: 10px; }
+.pdt20 { padding-top: 20px; }
+.pdt30 { padding-top: 30px; }
+.pdt40 { padding-top: 40px; }
+.pdt60 { padding-top: 60px; }
+.pdt80 { padding-top: 80px; }
+.pdb10 { padding-bottom: 10px; }
+.pdb20 { padding-bottom: 20px; }
+.pdb30 { padding-bottom: 30px; }
+.pdb40 { padding-bottom: 40px; }
+.pdb60 { padding-bottom: 60px; }
+.pdb80 { padding-bottom: 80px; }
+.pdb150 { padding-bottom: 150px; }
+.pdl10 { padding-left: 10px; }
+.pdl20 { padding-left: 20px; }
+.pdl30 { padding-left: 30px; }
+.pdl40 { padding-left: 40px; }
+.pdl60 { padding-left: 60px; }
+.pdl80 { padding-left: 80px; }
+.pdr10 { padding-right: 10px; }
+.pdr20 { padding-right: 20px; }
+.pdr30 { padding-right: 30px; }
+.pdr40 { padding-right: 40px; }
+.pdr60 { padding-right: 60px; }
+.pdr80 { padding-right: 80px; }
+.pdtb40 { padding-bottom: 40px; padding-top: 40px; }
+
+/*--------------------------------
+4.4 Background & Block color 
+----------------------------------*/
+.bg-light { background-color: #03366d; }
+.bg-primary { background-color: #027ab0; color: #fff; }
+.bg-default { background-color: #0cafe5; color: #fff; }
+.bg-white { background-color: #fff; }
+.outline { }
+.section-title { margin-bottom: 40px; text-align: center; }
+.title { color: #1c1e1e; }
+.small-title { margin-bottom: 10px; font-size: 12px; font-weight: 900; color: #ec1010; text-transform: uppercase; letter-spacing: 1px; display: inline-block; }
+.text-white { color: #fff; }
+.text-default { color: #0cafe5; }
+.text-primary { color: #0084bf; }
+.text-green { color: #43cf22; }
+.text-black { color: #1c1e1e; }
+.text-secondary { color: #848687; }
+.primary-sidebar { }
+.secondary-sidebar { }
+.well-block { background-color: #fff; padding: 40px; margin-bottom: 30px; }
+.divider-line { border-bottom: 1px solid #0a3360; margin-bottom: 30px; }
+
+/*--------------------------------
+4.5 Features Block 
+----------------------------------*/
+.features-section { }
+.feature { background-color: #03366d; border-radius: 10px; padding: 40px; text-align: center; font-size: 15px; }
+.feature-box { padding: 40px; border-radius: 6px; background: rgba(255, 20, 138, 0.46); background: -moz-linear-gradient(top, rgba(255, 20, 138, 0.46) 0%, rgba(255, 20, 138, 0.46) 0%, rgba(3, 54, 109, 0.46) 47%, rgba(3, 54, 109, 0.45) 100%); background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 20, 138, 0.46)), color-stop(0%, rgba(255, 20, 138, 0.46)), color-stop(47%, rgba(3, 54, 109, 0.46)), color-stop(100%, rgba(3, 54, 109, 0.45))); background: -webkit-linear-gradient(top, rgba(255, 20, 138, 0.46) 0%, rgba(255, 20, 138, 0.46) 0%, rgba(3, 54, 109, 0.46) 47%, rgba(3, 54, 109, 0.45) 100%); background: -o-linear-gradient(top, rgba(255, 20, 138, 0.46) 0%, rgba(255, 20, 138, 0.46) 0%, rgba(3, 54, 109, 0.46) 47%, rgba(3, 54, 109, 0.45) 100%); background: -ms-linear-gradient(top, rgba(255, 20, 138, 0.46) 0%, rgba(255, 20, 138, 0.46) 0%, rgba(3, 54, 109, 0.46) 47%, rgba(3, 54, 109, 0.45) 100%); background: linear-gradient(to bottom, rgba(255, 20, 138, 0.46) 0%, rgba(255, 20, 138, 0.46) 0%, rgba(3, 54, 109, 0.46) 47%, rgba(3, 54, 109, 0.45) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff148a', endColorstr='#03366d', GradientType=0); }
+.feature-list { }
+.feature-list ul { margin-bottom: 20px; }
+.feature-list ul li { font-size: 18px; color: #7aafea; font-weight: 300; line-height: 40px; }
+.feature-list.feature-box ul li { color: #fff; font-weight: 400; }
+.feature-icon { }
+.feature-content { }
+.feature-inner { }
+.feature-outline { }
+
+/*--- Feature left  class ---*/
+.feature-left { margin-bottom: 45px; }
+.feature-left .feature-icon { margin-bottom: 10px; float: left; font-size: 60px; color: #0084bf; padding-right: 24px; margin-top: 8px; }
+.feature-left .feature-content { }
+
+/*--- Feature center class ---*/
+.feature-center { padding: 30px 30px; text-align: center; }
+.feature-center .feature-icon { font-size: 48px; color: #0084bf; margin-bottom: 28px; }
+.feature-center.line { border-right: 1px solid #eeeeee; }
+.feature-center .feature-content { }
+.feature-boxed { border: 1px solid #eaeaea; padding: 50px; border-radius: 2px; text-align: center; margin-bottom: 20px; }
+.feature-boxed .feature-icon { font-size: 75px; color: #0084bf; margin-bottom: 35px; }
+.feature-boxed .feature-content { }
+
+/*--- Feature list class ---*/
+.feature-list { }
+.feature-list ul { }
+.feature-list ul li { }
+.feature-list li:before { }
+
+/*--------------------------------
+4.6 Bullet/arrow
+----------------------------------*/
+.arrow { position: relative; }
+.arrow li { padding-left: 30px; line-height: 36px; font-size: 14px; }
+.arrow li:before { font-family: "FontAwesome"; display: inline-block; position: absolute; left: 0; font-size: 16px; color: #55a903; content: '\f00c'; }
+.star { position: relative; }
+.star li { padding-left: 22px; line-height: 30px; font-size: 14px; }
+.star li:before { font-family: "FontAwesome"; display: inline-block; position: absolute; left: 0; font-size: 14px; color: #0084bf; content: '\f005'; }
+
+/*--------------------------------
+4.7 Call to actions 
+----------------------------------*/
+
+/*--------------------------------
+ 4.8 Image Hover Effect 
+----------------------------------*/
+
+/*--------------------------------
+4.9 Icon 
+----------------------------------*/
+
+/*--------------------------------
+5 Header / Navigations 
+----------------------------------*/
+
+/*--------------------
+    5.1 Header Regular 
+----------------------*/
+
+.header-wrapper { padding-top: 10px; padding-bottom: 10px; z-index: 9; position: relative; background-color: #0a3c73; }
+.logo { line-height: 3.8; }
+.top-header { }
+.top-header ul { }
+.top-header ul li { color: #82b3e8; float: left; font-size: 18px; font-weight: 400; line-height: 4; padding-right: 18px; }
+.star-rating { color: #df9b2f; }
+
+/*--------------------------
+    5.2 Navigations Regular
+ ----------------------------*/
+
+/*----------------------------------------------
+    5.4 Page Header
+----------------------------------------------*/
+
+/*-----------------------------------
+    6. Hero Section 
+-------------------------------------*/
+
+.hero-section { background-color: #03366d; padding-top: 40px; }
+.hero-title { font-size: 46px; }
+.demo-img img { opacity: 0.6; margin: 0 auto; }
+.demo-wrapper { padding-top: 120px; }
+
+/*-----------------------------------
+7. Footer 
+-------------------------------------*/
+.footer-section { text-align: center; }
+.footer-title { margin-bottom: 40px; font-size: 42px; }
+
+/*-------------- tiny footer ------------*/
+.tiny-footer { font-size: 14px; padding-bottom: 20px; padding-top: 40px; }
+
+/*--- easetemplate copyright link --*/
+.copyrightlink { color: #00b0ff; }
+.copyrightlink:hover { color: #00b0ff; }
+
+/*-------------- tiny footer ------------*/
+
+/*--- easetemplate copyright link --*/
+
+/*-----------------------------------
+9. Templates
+-------------------------------------*/
+
+/*-------------------------
+ 9.1 Template
+---------------------------*/
+
+.template-box { border-radius: 6px; margin-bottom: 50px; text-align: center; }
+.template-img img { border-radius: 6px; width: 100%; margin-bottom: 20px; opacity: .9 }
+.template-img img:hover { opacity: 1; }
+.template-content { }
+.template-title { color: #fff; margin-bottom: 0px; }
+
+/*-------------------------
+ 9.2 Service Single
+---------------------------*/
+
+/*-----------------------------------
+10. Pages
+-------------------------------------*/
+
+/*-------------------------
+ 10.1 About us
+---------------------------*/
+
+/*--------------------------
+10.2  Company List
+---------------------------*/
+
+/*--------------------------
+ 10.3  Job List
+ ----------------------------*/
+
+/*--------------------------
+ 10.4  Job Single
+ ----------------------------*/
+
+/*--------------------------
+ 10.5  Client Reviews
+ ----------------------------*/
+
+/*--------------------------
+ 10.6  Contact us
+ ----------------------------*/
+
+/*--------------------------
+ 10.7  Consultation Form
+ ----------------------------*/
+
+/*--------------------------
+ 10.8 StyleGuide
+ ----------------------------*/
+
+/*--------------------------
+10.9  404 error 
+---------------------------*/
+
+/*------------------------
+11. Blog pages
+--------------------------*/
+
+/*----- post-----*/
+
+/*----- meta -----*/
+
+/*----- pagination -----*/
+
+/*------post-gallery----*/
+
+/*----- prev-next-----*/
+
+/*----- Author-post -----*/
+
+/*----- Comments -----*/
+
+/*----- leave-Comments -----*/
+
+/*------------------------
+ 12. Sidebar / Widgets
+--------------------------*/
+
+/*----- widget -----*/
+
+/*-------------Template-features-------------*/
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width:1440px) { }
+@media only screen and (max-width:1200px) { }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width:992px) { }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width:768px) {
+  .top-header ul li { padding-right: 17px; }
+  .hero-section { padding-top: 50px; }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width:480px) { }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width:320px) {
+  .hero-section { padding-top: 50px; }
+  .feature { margin-bottom: 30px; }
+  .space-medium { padding-top: 40px; padding-bottom: 40px; }
+}
